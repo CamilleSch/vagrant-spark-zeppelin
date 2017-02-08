@@ -441,7 +441,7 @@
     {
       "title": "Declaring variables",
       "text": "val a \u003d 3 // val defines an immutable value\nvar b : Int \u003d 5 // var defines a mutable variable\nprintln(a + b)\n\nb \u003d 42\nprintln(a + b)\n\n// Note that the type of a variable or function is written after the variable or function. \n\n// Because Scala does type inference, it is also not necessary to declare type to variables when it looks obvious.",
-      "dateUpdated": "Jan 25, 2017 8:32:04 AM",
+      "dateUpdated": "Feb 8, 2017 2:19:03 PM",
       "config": {
         "enabled": true,
         "tableHide": true,
@@ -468,17 +468,18 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "a: Int \u003d 3\nb: Int \u003d 5\n8\nb: Int \u003d 42\n45\n"
+        "msg": "\na: Int \u003d 3\n\nb: Int \u003d 5\n8\n\nb: Int \u003d 42\n45\n"
       },
       "dateCreated": "Jan 25, 2017 8:32:04 AM",
-      "status": "READY",
-      "errorMessage": "",
+      "dateStarted": "Feb 8, 2017 2:19:03 PM",
+      "dateFinished": "Feb 8, 2017 2:19:05 PM",
+      "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "title": "Reusing a variable",
-      "text": "// variables are accessible accross cells\n\na * b",
-      "dateUpdated": "Jan 25, 2017 8:32:04 AM",
+      "text": "// variables are accessible accross cells\n\nprintln(a * b)\n",
+      "dateUpdated": "Feb 8, 2017 2:28:28 PM",
       "config": {
         "enabled": true,
         "title": true,
@@ -503,11 +504,12 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "res13: Int \u003d 15\n"
+        "msg": "126\n"
       },
       "dateCreated": "Jan 25, 2017 8:32:04 AM",
-      "status": "READY",
-      "errorMessage": "",
+      "dateStarted": "Feb 8, 2017 2:28:29 PM",
+      "dateFinished": "Feb 8, 2017 2:28:29 PM",
+      "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
@@ -730,8 +732,8 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "/*\n * The following function adds 2 to a number.\n */\ndef add2(x: Int): Int \u003d x + 2",
-      "dateUpdated": "Jan 25, 2017 1:34:04 AM",
+      "text": "/*\n * The following function adds 2 to a number.\n */\ndef add2(x: Int): Int \u003d x + 2\nadd2(4)",
+      "dateUpdated": "Feb 8, 2017 2:29:34 PM",
       "config": {
         "enabled": true,
         "graph": {
@@ -755,17 +757,17 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "\nadd2: (x: Int)Int\n"
+        "msg": "\nadd2: (x: Int)Int\n\nres25: Int \u003d 6\n"
       },
       "dateCreated": "Jan 25, 2017 8:32:04 AM",
-      "dateStarted": "Jan 25, 2017 1:34:04 AM",
-      "dateFinished": "Jan 25, 2017 1:34:04 AM",
+      "dateStarted": "Feb 8, 2017 2:29:34 PM",
+      "dateFinished": "Feb 8, 2017 2:29:34 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "/* now let\u0027s pass add2 function \n * to map,\n * a function that applies a function to each element of a  * list\n */\n\nList(1,2,3).map(add2)\n",
-      "dateUpdated": "Jan 25, 2017 1:34:26 AM",
+      "text": "/* now let\u0027s pass add2 function \n * to map,\n * a function that applies a function to each element of a  * list\n */\n\nList(1,2,3).map(add2)",
+      "dateUpdated": "Feb 8, 2017 2:31:29 PM",
       "config": {
         "enabled": true,
         "graph": {
@@ -787,14 +789,14 @@
       "jobName": "paragraph_1485333124533_-29284730",
       "id": "20161215-110440_1947087088",
       "result": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "type": "TEXT",
-        "msg": "\nres38: List[Int] \u003d List(3, 4, 5)\n"
+        "msg": "\nres31: List[Int] \u003d List(3, 4, 5)\n\n\n\n\u003cconsole\u003e:28: error: not found: value l\nval $ires14 \u003d l\n              ^\n\n\n\n\u003cconsole\u003e:26: error: not found: value l\n       l \u003d List(1,2,3)\n       ^\n"
       },
       "dateCreated": "Jan 25, 2017 8:32:04 AM",
-      "dateStarted": "Jan 25, 2017 1:34:26 AM",
-      "dateFinished": "Jan 25, 2017 1:34:27 AM",
-      "status": "FINISHED",
+      "dateStarted": "Feb 8, 2017 2:31:11 PM",
+      "dateFinished": "Feb 8, 2017 2:31:12 PM",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
@@ -971,6 +973,33 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "",
+      "dateUpdated": "Feb 8, 2017 3:02:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1486566142591_915179345",
+      "id": "20170208-150222_333538957",
+      "dateCreated": "Feb 8, 2017 3:02:22 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%md \n\u003ch4 style\u003d\"color:red;\"\u003eExercise\u003c/h4\u003e\nTry to solve the following rows. By editing the `val output \u003d ...` line, use `map`, `filter` and `reduce` with anonymous functions on the variable `input` to return a variable `output` that will be compared to the `expected`variable.\n\nRemember your session is interactive, it makes it easy to test intermediary values when chaining functions, example :\n```scala\ninput.map(...)                                  // 1st execution\ninput.map(...).filter(...)                      // 2nd execution\ninput.map(...).filter(...).reduce(...)          // 3rd execution\n```",
       "dateUpdated": "Jan 25, 2017 9:56:22 AM",
       "config": {
@@ -1007,8 +1036,8 @@
     },
     {
       "title": "Return the list of squared numbers from 1 to 5",
-      "text": "val input \u003d List(1, 2, 3, 4, 5)\nval output \u003d input.map(x \u003d\u003e x)\n\nval expected \u003d List(1, 4, 9, 16, 25) ",
-      "dateUpdated": "Jan 25, 2017 9:03:16 AM",
+      "text": "val input \u003d List(1, 2, 3, 4, 5)\nval output \u003d input.map(x \u003d\u003e x*x)\n\nval expected \u003d List(1, 4, 9, 16, 25) ",
+      "dateUpdated": "Feb 8, 2017 3:05:48 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -1033,18 +1062,18 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "\ninput: List[Int] \u003d List(1, 2, 3, 4, 5)\n\noutput: List[Int] \u003d List(1, 2, 3, 4, 5)\n\nexpected: List[Int] \u003d List(1, 4, 9, 16, 25)\n"
+        "msg": "\ninput: List[Int] \u003d List(1, 2, 3, 4, 5)\n\noutput: List[Int] \u003d List(1, 4, 9, 16, 25)\n\nexpected: List[Int] \u003d List(1, 4, 9, 16, 25)\n"
       },
       "dateCreated": "Jan 25, 2017 8:57:13 AM",
-      "dateStarted": "Jan 25, 2017 9:03:16 AM",
-      "dateFinished": "Jan 25, 2017 9:03:17 AM",
+      "dateStarted": "Feb 8, 2017 3:05:48 PM",
+      "dateFinished": "Feb 8, 2017 3:05:49 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "title": "Return the sum of elements from 1 to 5",
-      "text": "val input \u003d List(1, 2, 3, 4, 5)\nval output \u003d input.reduce((x, y) \u003d\u003e x)\n\nval expected \u003d 15",
-      "dateUpdated": "Jan 25, 2017 9:23:28 AM",
+      "text": "val input \u003d List(1, 2, 3, 4, 5)\nval output \u003d input.reduce((x, y) \u003d\u003e x+y)\n\nval expected \u003d 15",
+      "dateUpdated": "Feb 8, 2017 3:06:38 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -1069,18 +1098,18 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "\ninput: List[Int] \u003d List(1, 2, 3, 4, 5)\n\noutput: Int \u003d 1\n\nexpected: Int \u003d 15\n"
+        "msg": "\ninput: List[Int] \u003d List(1, 2, 3, 4, 5)\n\noutput: Int \u003d 15\n\nexpected: Int \u003d 15\n"
       },
       "dateCreated": "Jan 25, 2017 8:57:20 AM",
-      "dateStarted": "Jan 25, 2017 9:23:28 AM",
-      "dateFinished": "Jan 25, 2017 9:23:29 AM",
+      "dateStarted": "Feb 8, 2017 3:06:38 PM",
+      "dateFinished": "Feb 8, 2017 3:06:38 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "title": "Return the sum of squared pair numbers between 1 and 100",
-      "text": "val input \u003d 1 to 100\nval output \u003d input.reduce((x, y) \u003d\u003e x)\n\nval expected \u003d 171700",
-      "dateUpdated": "Feb 1, 2017 9:13:45 AM",
+      "text": "val input \u003d 1 to 100\n/*val test \u003d input.filter( _ % 2 \u003d\u003d 0)*/\n\nval output \u003d input.map(x \u003d\u003e x*x).filter( _ % 2 \u003d\u003d 0).reduce((x, y) \u003d\u003e x+y)\n\nval expected \u003d 171700",
+      "dateUpdated": "Feb 8, 2017 3:20:22 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -1105,18 +1134,18 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "\ninput: scala.collection.immutable.Range.Inclusive \u003d Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)\n\noutput: Int \u003d 1\n\nexpected: Int \u003d 171700\n"
+        "msg": "\n\n\ninput: scala.collection.immutable.Range.Inclusive \u003d Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)\noutput: Int \u003d 171700\nexpected: Int \u003d 171700\n"
       },
       "dateCreated": "Jan 25, 2017 8:57:27 AM",
-      "dateStarted": "Feb 1, 2017 9:13:46 AM",
-      "dateFinished": "Feb 1, 2017 9:13:48 AM",
+      "dateStarted": "Feb 8, 2017 3:20:22 PM",
+      "dateFinished": "Feb 8, 2017 3:20:23 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "title": "Get highest number in a list with a reduce",
       "text": "import util.Random.nextInt\nval input \u003d Seq.fill(10)(nextInt)\nval output \u003d input.reduce((x, y) \u003d\u003e x)\n\nval expected \u003d input.max",
-      "dateUpdated": "Jan 25, 2017 12:49:26 PM",
+      "dateUpdated": "Feb 8, 2017 2:25:35 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -1143,11 +1172,11 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "\nimport util.Random.nextInt\n\ninput: Seq[Int] \u003d List(1368154480, 932727527, -956762629, -741728139, 1912445161, 1215347429, 1054732247, -811870848, 762475751, 1567410629)\n\noutput: Int \u003d 1368154480\n\nexpected: Int \u003d 1912445161\n"
+        "msg": "\nimport util.Random.nextInt\n\ninput: Seq[Int] \u003d List(1828246594, 1486750342, -62838406, 1426171343, -701404228, 1925068887, -615023779, 466351092, -2143397085, 2122702379)\n\noutput: Int \u003d 1828246594\n\nexpected: Int \u003d 2122702379\n"
       },
       "dateCreated": "Jan 25, 2017 8:57:32 AM",
-      "dateStarted": "Jan 25, 2017 12:49:26 PM",
-      "dateFinished": "Jan 25, 2017 12:49:29 PM",
+      "dateStarted": "Feb 8, 2017 2:25:35 PM",
+      "dateFinished": "Feb 8, 2017 2:25:37 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
