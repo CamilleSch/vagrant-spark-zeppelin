@@ -203,8 +203,8 @@
     },
     {
       "title": "Shell cell",
-      "text": "%sh\necho \"Hello Chloé. C\u0027est Camille, tu vas bien ? \"",
-      "dateUpdated": "Feb 8, 2017 1:54:31 PM",
+      "text": "%sh\necho \"Hello Chloé. C\u0027est Camille, tu vas bien ??? \"",
+      "dateUpdated": "Feb 8, 2017 2:13:47 PM",
       "config": {
         "enabled": true,
         "title": true,
@@ -235,11 +235,11 @@
       "result": {
         "code": "SUCCESS",
         "type": "TEXT",
-        "msg": "Hello Chloé. C\u0027est Camille, tu vas bien ? \n"
+        "msg": "Hello Chloé. C\u0027est Camille, tu vas bien ??? \n"
       },
       "dateCreated": "Jan 25, 2017 8:32:04 AM",
-      "dateStarted": "Feb 8, 2017 1:54:31 PM",
-      "dateFinished": "Feb 8, 2017 1:54:31 PM",
+      "dateStarted": "Feb 8, 2017 2:13:47 PM",
+      "dateFinished": "Feb 8, 2017 2:13:47 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
